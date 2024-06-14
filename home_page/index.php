@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina web Izan</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1 class="titulo">Bienvenidos</h1>
-    </header>
-    <div class="bg-secundario">
-        <nav class="navegacion-principal contenedor">
-            <a href="#">Home</a>
-            <a href="#">Mapas</a>
-            <a href="#">Contacto</a>
-            <a href="#">Blog</a>
-        </nav>
-    </div>
+<?php   
+    include 'db.php';
+    include 'header.php';
+?>
     <section class="hero">
         <div class="contenido-hero">
             <h2>El mon de sa Astronomia</h2>
@@ -73,43 +54,7 @@
             <p>Consectetur adipisicing elit. Voluptatibus, error.</p>
             </section>
         </div><!--.micontenido-->
-        <section>
-            <h2>Contacto</h2>
-            <form class="formulario" action="">
-                <fieldset>
-                    <legend>Contactanos utilizando tus datos</legend>
-                    <div class="contenedor-campos">
-                        <div class="campo">            
-                            <div>
-                                <label for="">Nombre:</label>
-                                <input class="input-text" type="text" name="nombre" placeholder="Tu nombre">
-                            </div>
-                        </div>
-                        <div class="campo">
-                            <div>
-                                <label for="">Teléfono:</label>
-                                <input class="input-text" type="tel" name="email" id="" placeholder="Tu Teléfono">
-                            </div>
-                        </div>
-                        <div class="campo">
-                            <div>
-                                <label for="">Correo</label>
-                                <input class="input-text" type="email" name="correo" id="" placeholder="Tu correo">
-                            </div>
-                        </div>
-                        <div class="campo">
-                            <div>
-                                <label for="">Mensaje</label>
-                                <textarea class="input-text" name="mensaje" id="" cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-                        <div>
-                            <input class="boton" type="submit" value="Enviar">
-                        </div>
-                    </div><!--contenedor-campos-->
-                </fieldset>
-            </form>
-        </section>
     </main>
-</body>
-</html>
+<?php
+    include 'footer.php';
+?>
